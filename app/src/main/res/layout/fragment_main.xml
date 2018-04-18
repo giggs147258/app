@@ -1,16 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <ImageView
-        android:background="@drawable/guest"
         android:layout_width="50sp"
-        android:layout_height="50sp" />
+        android:layout_marginLeft="20dp"
+        android:layout_height="50sp"
+        android:background="@drawable/guest" />
+    <EditText
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:background="@drawable/password"
+        android:layout_marginLeft="50sp"
+        android:layout_marginTop="100sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
 
-
-
-</LinearLayout>
+</FrameLayout>
