@@ -6,20 +6,57 @@
     android:layout_height="match_parent">
 
     <ImageView
+        android:id="@+id/user"
         android:layout_width="50sp"
-        android:layout_marginLeft="20dp"
         android:layout_height="50sp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="50sp"
         android:background="@drawable/guest" />
-    <EditText
-        android:layout_gravity="center_horizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-    <ImageView
-        android:background="@drawable/password"
-        android:layout_marginLeft="50sp"
-        android:layout_marginTop="100sp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
 
+    <ImageView
+        android:id="@+id/pass"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:layout_marginLeft="80sp"
+        android:layout_marginTop="150sp"
+        android:background="@drawable/password" />
+
+    <EditText
+        android:id="@+id/usertext"
+        android:layout_width="150sp"
+        android:layout_height="50sp"
+        android:layout_marginLeft="170sp"
+        android:layout_marginTop="50sp"
+        android:text="username"
+        android:textAlignment="center" />
+
+    <ImageButton
+        android:id="@+id/loginbt"
+        android:background="@drawable/login"
+        android:layout_width="150sp"
+        android:layout_height="40sp"
+        android:layout_marginLeft="120sp"
+        android:layout_marginTop="270sp"
+        />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="150sp"
+        android:layout_height="50sp"
+        android:layout_marginLeft="170sp"
+        android:layout_marginTop="150sp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:text="password"
+        android:textAlignment="center" />
+
+    <ImageButton
+        android:id="@+id/regisbt"
+        android:background="@drawable/register"
+        android:layout_width="150sp"
+        android:layout_height="80sp"
+        android:layout_marginLeft="120sp"
+        android:layout_marginTop="380sp"
+        />
 
 </FrameLayout>
