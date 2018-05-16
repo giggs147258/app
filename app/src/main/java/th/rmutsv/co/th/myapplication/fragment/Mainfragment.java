@@ -41,21 +41,21 @@ public class Mainfragment extends Fragment{
     }
 
     private void Regis(){
-        final MediaPlayer sound = MediaPlayer.create(getActivity(),R.raw.track);
+            final MediaPlayer sound = MediaPlayer.create(getActivity(),R.raw.track);
 
-        regis = getView().findViewById(R.id.regisbt);
-        regis.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                sound.start();
+            regis = getView().findViewById(R.id.regisbt);
+            regis.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    sound.start();
 
-                Regisfragment regisfragment = new Regisfragment();
-                getActivity().getSupportFragmentManager()
-                        .beginTransaction()
-                        .replace(R.id.fragment, Regisfragment.newInstance())
-                        .commit();
-            }
-        });
+                    Regisfragment regisfragment = new Regisfragment();
+                    getActivity().getSupportFragmentManager()
+                            .beginTransaction()
+                            .replace(R.id.fragment, Regisfragment.newInstance())
+                            .commit();
+                }
+            });
     }
 
     private void Login(){

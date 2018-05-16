@@ -28,6 +28,7 @@ public class Mainfragment2 extends Fragment {
         super.onActivityCreated(savedInstanceState);
 
         Home();
+        Game();
     }
 
     private void Home() {
@@ -43,6 +44,24 @@ public class Mainfragment2 extends Fragment {
                 getActivity().getSupportFragmentManager()
                         .beginTransaction()
                         .replace(R.id.fragment, Mainfragment.newInstance())
+                        .commit();
+            }
+        });
+    }
+
+    private void Game() {
+        final MediaPlayer sound = MediaPlayer.create(getActivity(),R.raw.track);
+
+        imageButton = getView().findViewById(R.id.gamebt);
+        imageButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                sound.start();
+
+                MainMVC mainMVC = new MainMVC();
+                getActivity().getSupportFragmentManager()
+                        .beginTransaction()
+                        .replace(R.id.fragment, MainMVC.newInstance())
                         .commit();
             }
         });
